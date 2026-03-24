@@ -1,0 +1,13 @@
+{
+  "name": "pipeline-nodejs-example",
+  "version": "1.0.0",
+  "description": "Node.js app for CI/CD pipeline example",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "build": "echo Building the application...",
+    "start": "node index.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

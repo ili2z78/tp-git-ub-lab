@@ -1,0 +1,24 @@
+image: node:18
+
+stages:
+  - test
+  - build
+  - deploy
+
+test_job:
+  stage: test
+  script:
+    - echo "Running tests..."
+    - npm install
+    - npm test
+
+build_job:
+  stage: build
+  script:
+    - echo "Building the application..."
+    - npm run build
+
+deploy_job:
+  stage: deploy
+  script:
+    - echo "Deploying to staging environment..."
